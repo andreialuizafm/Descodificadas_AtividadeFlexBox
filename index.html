@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+
+    html, body {
+  width: 100vw;
+  height: 100vh;
+} 
+
+    h1 {
+      font-size: larger;
+      text-align: left;
+      color: white;
+    }
+
+    header,
+    footer {
+      background-color: #172ad4;
+      width: auto;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px;
+      height: auto;
+    }
+
+    main {
+      display: flex;
+      min-width: 1100px;
+      height: 700px;
+      background-color: #28794bec;
+      border-radius: 8px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: left;
+      color: white;
+      font-size: larger;
+
+    }
+
+    article {
+      width: 150px;
+      height: 100px;
+      margin: 10px;
+      background-color: #064826;
+      padding: 30px;
+      border-radius: 13px;
+      box-shadow: 10px 10px 10px rgba(11, 11, 11, 0.1);
+      font-style: normal white;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+
+    }
+
+    sidebar {
+      display: flex;
+      margin: 20px;
+      height: 700px;
+      background-color: red;
+      border-radius: 8px;
+      padding: 20px;
+      justify-content: flex-start;
+      align-content: stretch;
+      flex-direction: column;
+      align-self: flex-end;
+      flex-grow: 1;
+      flex-basis: auto;
+      min-width: 270px;
+      font-size: large;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1000px;
+      /*margin-left:20px;*/
+      /*margin-right: 20px;*/
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      align-items: flex-start;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+
+    .stretch {
+      align-self: stretch;
+    }
+
+    .basis-auto-width {
+      flex-grow: 1;
+      flex-basis: auto;
+      width: 300px;
+    }
+
+ 
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>header</h1>
+  </header>
+  <section class="container flex">
+    <main>
+      <h1>main</h1>
+      <div class="container flex flex-wrap">
+        <article>item</article>
+        <article>item</article>
+        <article>item</article>
+        <article>item</article>
+        <article>item</article>
+        <article>item</article>
+        <article>item</article>
+        <article>item</article>
+        <article>item</article>
+        <article>item</article>
+        <article>item</article>
+      </div>
+    </main>
+    <sidebar>
+      <div><h1>sidebar</h1></div>
+    </sidebar>
+    </div>
+  </section>
+  <footer>
+    <h1>footer</h1>
+  </footer>
+
+</body>
+
+</html>

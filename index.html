@@ -109,6 +109,55 @@
       flex-basis: auto;
       width: 300px;
     }
+@media (max-width: 1200px) {
+  main {
+    flex-wrap: wrap; /* Permite que os artigos se ajustem em várias linhas */
+    justify-content: center; /* Centraliza os itens no espaço disponível */
+    min-width: auto; /* Remove o tamanho mínimo fixo */
+  }
+
+  sidebar {
+    height: auto; /* Ajusta a altura automaticamente */
+    min-width: 100%; /* Faz com que ocupe a largura total */
+    margin: 10px 0; /* Adiciona espaço em cima e embaixo */
+  }
+
+  .container {
+    flex-direction: column; /* Ajusta a disposição em coluna para telas menores */
+    max-width: 100%; /* Permite ocupar toda a largura */
+  }
+}
+
+@media (max-width: 768px) {
+  header, footer {
+    text-align: center; /* Centraliza o texto em dispositivos menores */
+    margin: 10px;
+  }
+
+  article {
+    width: 100%; /* Permite que os artigos ocupem toda a largura disponível */
+    margin: 10px 0; /* Dá espaçamento entre os itens */
+  }
+
+  main {
+    padding: 10px; /* Reduz o espaçamento interno */
+    height: auto; /* Ajusta a altura automaticamente */
+  }
+
+  sidebar {
+    display: none; /* Oculta o sidebar em telas muito pequenas */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: medium; /* Reduz o tamanho da fonte dos títulos */
+  }
+
+  article {
+    padding: 10px; /* Reduz o espaçamento interno */
+  }
+}
 
  
   </style>
